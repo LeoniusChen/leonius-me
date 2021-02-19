@@ -30,10 +30,9 @@ My name is Leonius Chen.
 I am currently doing my internship at [ByteDance AI Lab](https://ailab.bytedance.com/).
 
 ## Research Interests
-- Speech synthesis
+- Speech Synthesis
 - Speaker Recognition
 - Voice Conversion
-- Prosody Modeling in Text-to-Speech
 - Robot Control with Embedded System
 
 ## Education
