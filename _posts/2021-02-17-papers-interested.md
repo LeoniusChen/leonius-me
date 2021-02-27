@@ -1,18 +1,18 @@
 ---
-title: 语音合成相关论文
+title: Speech Synthesis Related Papers
 tags: Papers
 layout: article
 ---
 
 本文用以记录语音合成 (Speech Synthesis) 领域相关论文，包括经典的和未来的方向。
 
-## 声学模型
+## Acoustic model
 
-### 非并行
+### Non-Parallel
 - Tacotron1: [Tacotron: Towards End-to-End Speech Synthesis](https://arxiv.org/abs/1703.10135) (Interspeech 2017)
 - Tacotron2: [Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions](https://arxiv.org/abs/1712.05884) (ICASSP 2018)
 
-### 并行
+### Parallel
 - FastSpeech1: [FastSpeech: Fast, Robust and Controllable Text to Speech](https://openreview.net/pdf/c2b7c145443ef7be7946e5dc58f88f12d442e307.pdf) (NIPS 2019)
 - FastSpeech2: [FastSpeech 2: Fast and High-Quality End-to-End Text to Speech](https://arxiv.org/abs/2006.04558) (arXiv 2020)
 - Glow-TTS: [Glow-TTS: A Generative Flow for Text-to-Speech via Monotonic Alignment Search](https://arxiv.org/abs/2005.11129) (NIPS 2020)
@@ -20,16 +20,19 @@ layout: article
 - BVAE-TTS: [Bidirectional Variational Inference for Non-Autoregressive Text-to-Speech](https://openreview.net/pdf?id=o3iritJHLfO) (ICLR 2021)
 
 
-## 声码器 Vocoder
+## Vocoder
 
-### 非并行
+### Non-Parallel
 - WaveNet: [WaveNet: A Generative Model for Raw Audio](https://www.isca-speech.org/archive/SSW_2016/pdfs/ssw9_DS-4_van_den_Oord.pdf) (ISCA SS Workshop 2016)
-- waveRNN: [Efficient Neural Audio Synthesis](http://proceedings.mlr.press/v80/kalchbrenner18a/kalchbrenner18a.pdf) (ICML 2018)
+- WaveRNN: [Efficient Neural Audio Synthesis](http://proceedings.mlr.press/v80/kalchbrenner18a/kalchbrenner18a.pdf) (ICML 2018)
 
-### 并行
+### Parallel
 - WaveGlow: [WaveGlow: A Flow-based Generative Network for Speech Synthesis](http://128.84.4.18/abs/1811.00002) (ICASSP 2019)
+- MelGAN: [MelGAN: Generative Adversarial Networks for Conditional Waveform Synthesis](https://arxiv.org/abs/1910.06711) (NIPS 2019) [[Code]](https://github.com/descriptinc/melgan-neurips)
+- HiFi-GAN: [HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis](https://arxiv.org/abs/2010.05646) (NIPS 2020) 
+[[Code]](https://github.com/jik876/hifi-gan)
 
-## 韵律建模 Prosody Modeling
+## Prosody Modeling
 
 ### Coarse-Level
 - Prosody-Tacotron: [Towards End-to-End Prosody Transfer for Expressive Speech Synthesis with Tacotron](http://proceedings.mlr.press/v80/skerry-ryan18a/skerry-ryan18a.pdf) (ICML2018)
