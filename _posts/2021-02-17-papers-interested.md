@@ -24,7 +24,8 @@ layout: article
 
 ### Non-Parallel
 - WaveNet: [WaveNet: A Generative Model for Raw Audio](https://www.isca-speech.org/archive/SSW_2016/pdfs/ssw9_DS-4_van_den_Oord.pdf) (ISCA SS Workshop 2016)
-- WaveRNN: [Efficient Neural Audio Synthesis](http://proceedings.mlr.press/v80/kalchbrenner18a/kalchbrenner18a.pdf) (ICML 2018)
+- FFTNet: [FFTNet: a Real-Time Speaker-Dependent Neural Vocoder](https://gfx.cs.princeton.edu/pubs/Jin_2018_FAR/fftnet-jin2018.pdf) (ICASSP 2018)
+- WaveRNN: [Efficient Neural Audio Synthesis](http://proceedings.mlr.press/v80/kalchbrenner18a/kalchbrenner18a.pdf) (ICML 2018)[[Code]](https://github.com/fatchord/WaveRNN)
 
 ### Parallel
 - WaveGlow: [WaveGlow: A Flow-based Generative Network for Speech Synthesis](http://128.84.4.18/abs/1811.00002) (ICASSP 2019)
@@ -43,7 +44,7 @@ layout: article
 ### Fine-Grained
 - Fine-grained-Attention: [Robust and Fine-Grained Prosody Control of End-to-End Speech Synthesis](https://arxiv.org/abs/1811.02122) (ICASSP 2019)
 - Manual-feature-based: [Fine-grained robust prosody transfer for single-speaker neural text-to-speech](https://arxiv.org/abs/1907.02479) (Interspeech 2019)
-- CopyCat-VC: [CopyCat: Many-to-Many Fine-Grained Prosody Transfer for Neural Text-to-Speech](http://www.interspeech2020.org/uploadfile/pdf/Thu-2-9-1.pdf) (Interspeech 2020)
+- CopyCat: [CopyCat: Many-to-Many Fine-Grained Prosody Transfer for Neural Text-to-Speech](http://www.interspeech2020.org/uploadfile/pdf/Thu-2-9-1.pdf) (Interspeech 2020)
 
 
 <!-- more -->
