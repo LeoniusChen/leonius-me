@@ -46,6 +46,20 @@ layout: article
 - Audio2Obama: Synthesizing Obama: Learning lip sync from audio (ACM Trans Graph 2017)
 - Neural voice puppetry: Audio-driven facial reenactment (ECCV 2020)
 
+## ATVG
+- [Hierarchical cross-modal talking face generation with dynamic pixel-wise loss](https://arxiv.org/abs/1905.03820)  
+该论文发表在CVPR 2019上
+
+
+## 关于PCA
+最小投影平方差，本质是将方差最大的方向作为主要特征
+- [视频介绍](https://www.bilibili.com/video/BV164411b7dx?p=84&spm_id_from=pageDriver)  
+1）首先对所有样本特征进行均值归一化  
+2）计算协方差矩阵  
+3）SVD分解，取U的前K列，即为投影平面（其中K的选择可以通过不等式确定）  
+4）计算得到降维后的样本向量  
+5）回到高维表示
+- [详细过程](https://zhuanlan.zhihu.com/p/77151308)
 
 
 <!-- more -->
