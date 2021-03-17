@@ -1,6 +1,6 @@
 ---
 title: Speech Synthesis Related Papers
-tags: Papers
+tags: Papers TTS
 layout: article
 ---
 
