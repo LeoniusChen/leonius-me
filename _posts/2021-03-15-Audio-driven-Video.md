@@ -46,10 +46,14 @@ layout: article
 - Audio2Obama: Synthesizing Obama: Learning lip sync from audio (ACM Trans Graph 2017)
 - Neural voice puppetry: Audio-driven facial reenactment (ECCV 2020)
 
+### 常用的dataset
+- LRW, GRID
+
 ## ATVG
 - [Hierarchical cross-modal talking face generation with dynamic pixel-wise loss](https://arxiv.org/abs/1905.03820)  
-该论文发表在CVPR 2019上
-首次利用landmarks作为人脸的中间表示
+该论文发表在CVPR 2019上，主要目的是根据给定的audio，让still的人物图片动起来说这段audio，且保持较高的lip同步和稳定的脸部图像质量。
+其主要贡献是：
+1）
 
 
 ## 关于PCA
