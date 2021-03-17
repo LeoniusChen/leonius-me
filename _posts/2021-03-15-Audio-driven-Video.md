@@ -49,6 +49,7 @@ layout: article
 ## ATVG
 - [Hierarchical cross-modal talking face generation with dynamic pixel-wise loss](https://arxiv.org/abs/1905.03820)  
 该论文发表在CVPR 2019上
+首次利用landmarks作为人脸的中间表示
 
 
 ## 关于PCA
