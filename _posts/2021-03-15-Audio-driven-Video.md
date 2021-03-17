@@ -1,6 +1,6 @@
 ---
 title: 关于声音驱动脸部图像的文章调研
-tags: Audio-driven-Talking-Face
+tags: Audio-driven-Talking-Face Papers
 layout: article
 ---
 
