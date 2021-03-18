@@ -49,6 +49,10 @@ layout: article
 ### 常用的dataset
 - LRW, GRID
 
+### 评价指标
+- 图像质量PSNR, SSIM
+- Audio-Visual同步
+
 ## ATVG
 - [Hierarchical cross-modal talking face generation with dynamic pixel-wise loss](https://arxiv.org/abs/1905.03820)  
 该论文发表在CVPR 2019上，主要目的是根据给定的audio，让still的人物图片动起来说这段audio，且保持较高的lip同步和稳定的脸部图像质量。
