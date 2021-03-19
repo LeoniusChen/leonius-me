@@ -56,8 +56,11 @@ layout: article
 ## ATVG
 - [Hierarchical cross-modal talking face generation with dynamic pixel-wise loss](https://arxiv.org/abs/1905.03820)  
 该论文发表在CVPR 2019上，主要目的是根据给定的audio，让still的人物图片动起来说这段audio，且保持较高的lip同步和稳定的脸部图像质量。
-其主要贡献是：
-1）
+其主要贡献是：  
+1）首次利用lanmarks作为人脸的中间表征，这有效的避免来模型学习到audio不相关信息  
+2）利用attention相关的Loss，使模型更关注audio相关的人脸变化（Ablation实验中作用较明显）  
+3）利用多模态的MMCRNN构造generator，使得帧过渡更加平滑自然（Ablation实验中作用较明显）  
+4）提出一个regression-based discriminator，其中的时序帧级部分利用perceptual loss使得genertor的输出有更多细节，全局部分使得整个序列更真实（Ablation实验中效果不显著）
 
 
 ## 关于PCA
