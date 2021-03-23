@@ -34,8 +34,8 @@ Tacotron2中，RNN换成了LSTM，其实现是[torch.nn.LSTMCell(input, (h0, c0)
   
 LSA具体的实现过程是：  
 AttentionWrapper -> LSA -> BahdanauAttention  
-1) 同样的得到query与key
-2) 利用cumulative [B, 1, T]，通过卷积的操作得到location [B, 32, T] -> [B, 128, T] -> [B, T, 128]
-3) **tanh(query + key + location)**，计算得到alignment_energy，同样的降维到[B, T] **这里引入了location，因此称之为location sensitive**
-4) softmax进行归一化，得到alignment
-5) cumulative += alignment，这里的cumulative累加了每一次的alignment，相当于引入了历史alignment的信息
+1) 同样的得到query与key  
+2) 利用cumulative [B, 1, T]，通过卷积的操作得到location [B, 32, T] -> [B, 128, T] -> [B, T, 128]  
+3) **tanh(query + key + location)**，计算得到alignment_energy，同样的降维到[B, T] **这里引入了location，因此称之为location sensitive**  
+4) softmax进行归一化，得到alignment  
+5) cumulative += alignment，这里的cumulative累加了每一次的alignment，相当于引入了历史alignment的信息  
