@@ -41,4 +41,6 @@ AttentionWrapper -> LSA -> BahdanauAttention
 5) cumulative += alignment，这里的cumulative累加了每一次的alignment，相当于引入了历史alignment的信息  
 
 ## 关于stop-net不能停止
-1) 尝试在text末尾加EOS截止符
+1) 尝试在text末尾加EOS截止符  
+[issue1](https://github.com/NVIDIA/tacotron2/issues/407)  [issue2](https://github.com/NVIDIA/tacotron2/issues/254#issuecomment-523707805)  
+[issue3-imiblanced](https://github.com/NVIDIA/tacotron2/issues/319#issuecomment-603600457)
