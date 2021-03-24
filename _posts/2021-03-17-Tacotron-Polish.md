@@ -39,3 +39,6 @@ AttentionWrapper -> LSA -> BahdanauAttention
 3) **tanh(query + key + location)**，计算得到alignment_energy，同样的降维到[B, T] **这里引入了location，因此称之为location sensitive**  
 4) softmax进行归一化，得到alignment  
 5) cumulative += alignment，这里的cumulative累加了每一次的alignment，相当于引入了历史alignment的信息  
+
+## 关于stop-net不能停止
+1) 尝试在text末尾加EOS截止符
