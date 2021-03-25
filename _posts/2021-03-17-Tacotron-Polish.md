@@ -42,5 +42,6 @@ AttentionWrapper -> LSA -> BahdanauAttention
 
 ## 关于stop-net不能停止
 1) 尝试在text末尾加EOS截止符  
-[issue1](https://github.com/NVIDIA/tacotron2/issues/407)  [issue2](https://github.com/NVIDIA/tacotron2/issues/254#issuecomment-523707805)  
+[issue1](https://github.com/NVIDIA/tacotron2/issues/407)  [issue2](https://github.com/NVIDIA/tacotron2/issues/254#issuecomment-523707805)
+2) 对stop-net输出的imblanced learning问题做优化
 [issue3-imiblanced](https://github.com/NVIDIA/tacotron2/issues/319#issuecomment-603600457)
