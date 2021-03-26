@@ -49,5 +49,11 @@ AttentionWrapper -> LSA -> BahdanauAttention
 实验证明有效
 
 ## 关于替换Attention的尝试
-1) Forward Attention version1 有效，但是目前尚没有集成在Repo中
-2）Stepwise Monotonic Attention 效果与LSA相差不大
+1) Forward Attention version1 (FA1) 有效，但是目前尚没有集成在Repo中
+2）Stepwise Monotonic Attention (SMA) 在同样的reduction factor下表现优于FA1  
+出现skip的次数明显减少  
+3) GMM-based Attention的复现，见下面
+
+## GMM-based Attention
+### V1
+- 原始出处 [Generating Sequences With Recurrent Neural Networks](https://arxiv.org/abs/1308.0850) (arXiv 2013)
