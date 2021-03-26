@@ -42,6 +42,12 @@ AttentionWrapper -> LSA -> BahdanauAttention
 
 ## 关于stop-net不能停止
 1) 尝试在text末尾加EOS截止符  
-[issue1](https://github.com/NVIDIA/tacotron2/issues/407)  [issue2](https://github.com/NVIDIA/tacotron2/issues/254#issuecomment-523707805)
-2) 对stop-net输出的imblanced learning问题做优化
-[issue3-imiblanced](https://github.com/NVIDIA/tacotron2/issues/319#issuecomment-603600457)
+[issue1](https://github.com/NVIDIA/tacotron2/issues/407)  [issue2](https://github.com/NVIDIA/tacotron2/issues/254#issuecomment-523707805)  
+实验证明区别不大  
+2) 对stop-net输出的imblanced learning问题做优化  
+[issue3-imiblanced](https://github.com/NVIDIA/tacotron2/issues/319#issuecomment-603600457)  
+实验证明有效
+
+## 关于替换Attention的尝试
+1) Forward Attention version1 有效，但是目前尚没有集成在Repo中
+2）Stepwise Monotonic Attention 效果与LSA相差不大
