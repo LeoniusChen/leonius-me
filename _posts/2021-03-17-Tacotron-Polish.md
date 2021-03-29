@@ -57,3 +57,5 @@ AttentionWrapper -> LSA -> BahdanauAttention
 ## GMM-based Attention
 ### V1
 - 原始出处 [Generating Sequences With Recurrent Neural Networks](https://arxiv.org/abs/1308.0850) (arXiv 2013)
+- TTS中的应用 [Towards End-to-End Prosody Transfer for Expressive Speech Synthesis with Tacotron](http://proceedings.mlr.press/v80/skerry-ryan18a/skerry-ryan18a.pdf) (ICML2018)
+- 参考代码 
