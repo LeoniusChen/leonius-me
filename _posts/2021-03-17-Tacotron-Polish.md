@@ -55,7 +55,10 @@ AttentionWrapper -> LSA -> BahdanauAttention
 3) GMM-based Attention的复现，见下面
 
 ## GMM-based Attention
-### V1
+GMM Attention是**purely location**的，它在计算的过程中与memory(text)、前一时刻的alignment都没有关系
 - 原始出处 [Generating Sequences With Recurrent Neural Networks](https://arxiv.org/abs/1308.0850) (arXiv 2013)
 - TTS中的应用 [Towards End-to-End Prosody Transfer for Expressive Speech Synthesis with Tacotron](http://proceedings.mlr.press/v80/skerry-ryan18a/skerry-ryan18a.pdf) (ICML2018)
-- 参考代码 
+- V0详细公式及改进版V1/V2 [Location-Relative Attention Mechanisms For Robust Long-Form Speech Synthesis](https://arxiv.org/abs/1910.10288)
+- Tensorflow版本的GMM V0 [ref code in keithito](https://github.com/keithito/tacotron/issues/136)
+- PyTorch版本author自己改进的离散型的GMM Attention [ref code in mozilla/TTS](https://github.com/mozilla/TTS/blob/dev/TTS/tts/layers/attentions.py)及[公式解读](https://erogol.com/two-methods-for-better-attention-in-tacotron/)
+- [issue in Rayhane-mamah/Tacotron-2](https://github.com/Rayhane-mamah/Tacotron-2/issues/265) 关于GMM效果的讨论  
