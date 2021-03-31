@@ -61,3 +61,6 @@ GMM Attention是**purely location**的，它在计算的过程中与memory(text)
 - Tensorflow版本的GMM V0 [ref code in keithito](https://github.com/keithito/tacotron/issues/136)
 - PyTorch版本author自己改进的离散型的GMM Attention [ref code in mozilla/TTS](https://github.com/mozilla/TTS/blob/dev/TTS/tts/layers/attentions.py)及[公式解读](https://erogol.com/two-methods-for-better-attention-in-tacotron/)
 - [issue in Rayhane-mamah/Tacotron-2](https://github.com/Rayhane-mamah/Tacotron-2/issues/265) 关于GMM效果的讨论  
+
+## Mel特征的提取
+在Nvidia的实现中，为了在训练过程中实时提取Mel，采用了[pseeth/torch-stft](https://github.com/pseeth/torch-stft)，该mel特征提取方式可能会影响对齐，需要进一步验证
