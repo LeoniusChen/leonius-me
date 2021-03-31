@@ -18,12 +18,12 @@ Tacotron1中，Attention_RNN的实现是[torch.nn.GRUCell(input, hidden)](https:
 Tacotron1中已经支持reduction_factor，没有stop_net
 
 在[r9y9/tacotron_pytorch](https://github.com/r9y9/tacotron_pytorch)中，AttentionWrapper集成了计算attention的功能  
-BahdanauAttention的计算，以下所有的计算被包裹在AttentionWrapper：
+BahdanauAttention的计算，以下所有的计算被包裹在AttentionWrapper：  
 1) [attention_context, mel]经过一层RNN成为计算attention的query，维度是[B, 1024]，并被降维到[B, 1, 128]    
 2) text_encoder_outputs经过处理成为key，维度是[B, T, 128]  
 3) **tanh(query + key)**，计算得到alignment_energy，维度是[B, T, 128]，并降维到[B, T, 1]->[B, T]，该matrix的每一行表示 当前decoder步关注text序列中各个时间步的权重（未归一化）  
 4) 进行mask，将text的padding部分的权重设置为**无穷小**  
-5) 进行归一化，利用softmax对每一行进行归一化，得到了alignment，即**当前mel关注哪些时刻的text**
+5) 进行归一化，利用softmax对每一行进行归一化，得到了alignment，即**当前mel关注哪些时刻的text**  
 6) 将alignment与原始的text_encoder_outputs相乘 [B, 1, T] * [B, T ,512] = [B, 1, 512] -> [B, 512]，即为attention_context
 
 
@@ -48,7 +48,7 @@ AttentionWrapper -> LSA -> BahdanauAttention
 实验证明有效
 
 ## 关于替换Attention的尝试
-1) Forward Attention version1 (FA1) 有效，但是目前尚没有集成在Repo中
+1) Forward Attention version1 (FA1) 有效，但是目前尚没有集成在Repo中  
 2）Stepwise Monotonic Attention (SMA) 在同样的reduction factor下表现优于FA1  
 出现skip的次数明显减少  
 3) GMM-based Attention的复现，见下面
